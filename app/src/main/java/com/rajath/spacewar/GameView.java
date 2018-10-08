@@ -78,7 +78,7 @@ public class GameView extends SurfaceView implements Runnable {
     private Boom boom;
 
     //the mediaplayer objects to configure the background music
-    static  MediaPlayer gameOnsound;
+   // static  MediaPlayer gameOnsound;
 
     final MediaPlayer killedEnemysound;
 
@@ -140,12 +140,12 @@ public class GameView extends SurfaceView implements Runnable {
 
 
         //initializing the media players for the game sounds
-       gameOnsound = MediaPlayer.create(context,R.raw.gameon);
+      // gameOnsound = MediaPlayer.create(context,R.raw.gameon);
         killedEnemysound = MediaPlayer.create(context,R.raw.killedenemy);
         gameOversound = MediaPlayer.create(context,R.raw.gameover);
 
         //starting the music to be played across the game
-        gameOnsound.start();
+       // gameOnsound.start();
 
     }
 
@@ -232,7 +232,7 @@ public class GameView extends SurfaceView implements Runnable {
 
 
                                 //stopping the gameon music
-                                gameOnsound.stop();
+                               // gameOnsound.stop();
                                 //play the game over sound
                                 gameOversound.start();
 
@@ -281,7 +281,7 @@ public class GameView extends SurfaceView implements Runnable {
 
 
                     //stopping the gameon music
-                    gameOnsound.stop();
+                   // gameOnsound.stop();
                     //play the game over sound
                     gameOversound.start();
 
@@ -410,7 +410,7 @@ public class GameView extends SurfaceView implements Runnable {
     //stop the music on exit
     public static void stopMusic(){
 
-        gameOnsound.stop();
+        //gameOnsound.stop();
     }
 
 
